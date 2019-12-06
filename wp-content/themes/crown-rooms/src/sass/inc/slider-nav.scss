@@ -1,0 +1,35 @@
+.owl-theme .owl-nav{
+    position: absolute;
+    height: auto;
+    width: auto;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    outline: none !important;
+    cursor: pointer;
+    z-index: -1;
+    button span{
+        font-size: 170px;
+        color: $color-primary;
+    }
+    .fa, .fas{
+        font-size: 50px;
+        color: $color-primary;
+    }
+    [class*=owl-]:hover{
+        background: none !important;
+        outline: none !important;
+    }
+    button.owl-prev{
+        margin-left: -40px;
+    }
+    button.owl-next{
+        margin-right: -40px;
+    }
+    @media(min-width: 600px){
+        height: 100%;
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+    }
+}

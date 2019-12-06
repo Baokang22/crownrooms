@@ -1,0 +1,70 @@
+.amenities {
+    background: $color-primary;
+    background-image: url('./../img/overlay.png');
+    padding: 4rem 0;
+    @media(min-width:415px){
+        padding: 10rem 0;
+    }
+    @media(min-width: 900px){
+        padding: 1rem 10rem;
+        margin-top: 7rem;
+    }
+    .title {
+        font-size: 5rem;
+        color: #fff; 
+        margin-bottom: 0;
+        margin-left: 1rem;
+    }
+    .amenities-container {
+        // position: relative;
+        // margin: 0 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        // @media(min-width: 691px){
+        //     margin: 0 5rem;
+        // }
+        .amenities-list {
+            display: flex;
+            list-style: none;
+            justify-content: space-around;
+            flex-flow: row wrap;
+            li {
+                text-transform: uppercase;
+                color: #fff;
+                padding: 5px;
+                width: 150px;
+                height: 80px;
+                margin-top: 10px;
+                // line-height: 40px;
+                letter-spacing: 2px;
+                color: white;
+                font-weight: bold;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: flex-start;
+                img{
+                    // padding-left: 20px;
+                    margin-right: 10px;
+                }
+                span{
+                    margin-top: 10px;
+                    font-size: 12px;
+                    font-weight: 400;
+                }
+                @media(min-width: 415px){
+                    width: 200px;
+                    span{
+                        font-size: 15px;
+                    }
+                }
+                @media(min-width: 1001px){
+                    height: 140px;
+                    width: 250px;
+                }
+            }
+        }
+    }
+}

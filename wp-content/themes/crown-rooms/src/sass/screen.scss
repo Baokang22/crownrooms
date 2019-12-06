@@ -1,0 +1,47 @@
+@import "main";
+@import "inc/welcome";
+@import "inc/header";
+@import "inc/accommodation";
+@import "inc/slider-dots.scss";
+@import "inc/amenities.scss";
+@import "inc/barandrestaurant.scss";
+@import "inc/contact-us.scss";
+@import "inc/find-us.scss";
+@import "inc/our-reviews.scss";
+@import "inc/slider-nav.scss";
+@import "inc/footer.scss";
+@import "inc/mobile-nav.scss";
+.et-slide{
+    outline: none;
+}
+
+@mixin element($name){
+    @at-root #{&}__#{$name}{
+        @content;
+    }
+}
+@mixin modifier($name) {
+    @at-root #{&}--#{$name}{
+        @content;
+    }
+}
+@mixin top {
+    top: 0;
+    right: 0;
+}
+
+@include respond (phone) {
+    .block{
+        color: red;
+        @include element(btn){
+            color: black;
+            @include modifier(large){
+                color: green;
+                @include top;
+            }
+        }
+        @include modifier(large){
+            color: green;
+        }
+    }
+}

@@ -1,0 +1,1 @@
+var page=2;jQuery(function(o){o(".load-more").on("click",function(){var e={action:"load_posts_by_ajax",page:page,security:sort_isotope.security};o.post(sort_isotope.ajaxurl,e,function(e){if(""!=e){var a=o(e);console.log(a),console.log(e),o(".grid").append(a).isotope("appended",a),page++}else o(".load-more").hide()})})});

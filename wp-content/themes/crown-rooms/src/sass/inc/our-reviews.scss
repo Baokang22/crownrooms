@@ -1,0 +1,81 @@
+.our-reviews {
+    width: 90%;
+    margin: 6rem auto;
+    font-size: 15px;
+    @media (min-width: 600px) {
+        width: 80%;
+        // margin: 10rem auto;
+    }
+    .our-reviews-slider {
+        width: 80%;
+        margin: 0 auto;
+        height: 230px;
+    }
+    .uppercase {
+        text-transform: uppercase;
+        color: #666;
+        letter-spacing: 1px;
+        font-size: 16px;
+    }
+    h2 {
+        font-size: 4rem;
+        color: $color-primary;
+        line-height: 1;
+        margin: 0;
+        @media (min-width: 415px) {
+            font-size: 6rem;
+        }
+    }
+    .uppercase,
+    h2 {
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+        @media(min-width: 600px){
+            width: 57%;
+        }
+    }
+    .item {
+        // width: 80%;
+        // margin: 0 auto; 
+        @media (min-width: 600px) {
+            width:70%;
+            margin: 0 auto;
+        }
+        p {
+            font-size: 15px;
+        }
+        .guest-box {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            .guest-photo {
+                width: 30px;
+                height: 30px;
+                display: none;
+                border-radius: 50px;
+                margin: 0 auto;
+            }
+            .guest-name {
+                display: none;
+                text-transform: uppercase;
+                font-size: 15px;
+                color: #666;
+                letter-spacing: 1px;
+                // margin: auto 0;
+                margin-left: 20px;
+            }
+            @media (min-width: 600px) {
+                .guest-name {
+                    display: inline;
+                }
+                .guest-photo {
+                    display: inline-block;
+                    margin: initial;
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+        }
+    }
+}
